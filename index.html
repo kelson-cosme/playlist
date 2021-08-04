@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilo.css">
+    <title>Playlist</title>
+</head>
+<body>
+    <h1>Playlist</h1>
+
+    <div class="container">
+        <div class="menu" onclick="barra()">
+            <div id="line1"></div>
+            <div id="line2"></div>
+            <div id="line3"></div>
+        </div>
+
+        <div class="playlist" >
+            <ul>
+                <li class="lista1" value="0" onclick="escolher1()">Ce tem meu whatsapp - Banda Novo Som</li> 
+                <li class="lista2" value="1" onclick="escolher2()">Ele é ele eu sou eu - Banda Novo Som</li>
+                <li class="lista3" value="2" onclick="escolher3()">Facas - Banda Novo Som</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="tempo"></div>
+
+    <div class="audio">
+        <audio id="player" >
+            <source id="localMusica" src="" type="audio/mpeg">
+        </audio>
+    </div>
+    
+
+    <div class="duracao">
+        <input type="range" min="0" max="100" value="0" id="duracao" onchange="change_duration()">
+    </div>
+
+    <div class="controle">
+        <ul class="listaControle">
+            <ol><img src="/imagens/retroceder.png" alt="Retroceder" onclick="retroceder()"></ol>
+            <ol><img id="playMusic"  src="/imagens/play.jpg.png" alt="Play" onclick="start()"></ol>
+            <ol><img src="/imagens/avancar.png" alt="Avançar" onclick="avancar()"></ol>
+            <ol><img src="/imagens/reiniciar.png" alt="Reiniciar" onclick="reiniciar()"></ol>
+
+        </ul>
+    </div>
+
+    <footer>
+        <a href="https://github.com/kelson-cosme" target="_blank"><img width="50px" src="/imagens/logogithub.svg" alt="Logo github"></a> 
+    </footer>
+
+</body>
+<script src="/script.js"></script>
+</html>

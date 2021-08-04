@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("/imagens/fundo.jpg");
+    background-size: cover;
+}
+html, body{
+    height: 100%;
+    
+}
+h1{
+    color: #fff;
+    text-align: center;
+    background-color: #0A869B;
+    margin: 0 0 2% 0; 
+    padding: 20px;
+}
+.container{
+    width: 30%;
+    height: 50%;
+    background-image: url("/imagens/background.gif");
+    background-size: cover;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: hidden;
+}
+/*menu*/
+.menu{
+    cursor: pointer;
+    margin: 10px;
+}
+.menu div{
+    margin: 5px;
+    width: 40px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+    transition: .2s;
+}
+/*Lista das musicas*/
+.playlist{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.548);
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: .2s;
+    overflow: auto;
+}
+.playlist li{
+    cursor: pointer;
+}
+.active{
+    transform: translateX(0);
+}
+/*girar*/
+#line1.ativar{
+    transform: rotate(-45deg) translate(-4px, 7px);
+}
+#line2.ativar2{
+    opacity: 0;
+}
+#line3.ativar3{
+    transform: rotate(45deg) translate(-7px, -7px);
+}
+
+/*lista li*/
+.playlist li{
+    padding: 10px;
+    list-style-type: none;
+    transition: .2s;
+}
+.playlist li:hover{
+    text-decoration: underline;
+    background-color: #0a859bb9;
+    padding: 13px;
+
+}
+
+/*Audio*/
+.tempo{
+    text-align: center;
+}
+.audio{
+    width: 30%;
+    margin: auto;
+}
+audio{
+    width: 100%;
+}
+.duracao{
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+.duracao input{
+    width: 100%;
+}
+.controle{
+    width: 30%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.315);
+    border-radius: 10px;
+}
+.listaControle{
+    display: flex;
+    justify-content: space-around;
+}
+.listaControle ol{
+    width: 13%;
+}
+.listaControle img{
+    width: 100%;
+    cursor: pointer;
+}
+footer{
+    margin-top: 2%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+footer img{
+    transition: .2s;
+
+}
+footer img:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    
+}
+
+@media screen and (max-width: 1000px){
+    .container{
+        width: 50%;
+    }
+    .controle{
+        width: 50%;
+    }
+    .duracao{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .container{
+        width: 80%;
+    }
+    .controle{
+        width: 80%;
+    }
+    .duracao{
+        width: 80%;
+    }
+}
