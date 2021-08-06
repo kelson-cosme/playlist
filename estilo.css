@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-image: url("/imagens/fundo.jpg");
+    background-image: url(" imagens/fundo.jpg");
     background-size: cover;
 }
 html, body{
@@ -20,7 +20,7 @@ h1{
 .container{
     width: 30%;
     height: 50%;
-    background-image: url("/imagens/background.gif");
+    background-image: url(" imagens/background.gif");
     background-size: cover;
     margin: auto;
     display: flex;
