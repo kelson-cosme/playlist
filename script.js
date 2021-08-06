@@ -65,7 +65,7 @@ function start(){
 function reiniciar(){
    player.currentTime = 0;
    player.play();
-  play.setAttribute("src", "/imagens/pause.png")
+  play.setAttribute("src", " imagens/pause.png")
 }
 
 /*Duração*/
@@ -83,7 +83,7 @@ function range_slider(){
         slider.value = position;
 
         if(slider.value == 100){
-            play.setAttribute("src", "/imagens/play.jpg.png");
+            play.setAttribute("src", " imagens/play.jpg.png");
         }
     }
 }
@@ -92,17 +92,17 @@ function mudarLista(){
     let playLugar = play.getAttribute("src")
 
     if(playLugar == "/imagens/play.jpg.png"){
-        play.setAttribute("src", "/imagens/pause.png")
+        play.setAttribute("src", " imagens/pause.png")
     } 
 } 
 /*Mudar tudo*/
 function mudar(){
     let playLugar = play.getAttribute("src")
 
-    if(playLugar == "/imagens/play.jpg.png"){
-        play.setAttribute("src", "/imagens/pause.png")
+    if(playLugar == " imagens/play.jpg.png"){
+        play.setAttribute("src", " imagens/pause.png")
     } else {
-        play.setAttribute("src", "/imagens/play.jpg.png");
+        play.setAttribute("src", " imagens/play.jpg.png");
     }
 }
 
