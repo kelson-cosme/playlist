@@ -36,7 +36,7 @@ let slider = document.getElementById("duracao");
 let timer;
 
 function comecar(){
-    player.setAttribute("src", "/musicas/BANDA NOVO SOM - CE TEM MEU WHATSAPP LANÇAMENTO EXCLUSIVO 2021 LAMBADÃO JANEIRO_160k.mp3");
+    player.setAttribute("src", " musicas/BANDA NOVO SOM - CE TEM MEU WHATSAPP LANÇAMENTO EXCLUSIVO 2021 LAMBADÃO JANEIRO_160k.mp3");
     player.load();
 
 }
@@ -48,12 +48,12 @@ function start(){
     
     let playLugar = play.getAttribute("src")
 
-    if(playLugar == "/imagens/play.jpg.png"){
-        play.setAttribute("src", "/imagens/pause.png")
+    if(playLugar == " imagens/play.jpg.png"){
+        play.setAttribute("src", " imagens/pause.png")
         player.play();
         timer = setInterval(range_slider, 1000);
     } else {
-        play.setAttribute("src", "/imagens/play.jpg.png");
+        play.setAttribute("src", " imagens/play.jpg.png");
         player.pause();
  
     }
@@ -109,13 +109,13 @@ function mudar(){
 /**Lista de Musicas */
 let musicasLista = [
     {
-      caminho: "/musicas/BANDA NOVO SOM - CE TEM MEU WHATSAPP LANÇAMENTO EXCLUSIVO 2021 LAMBADÃO JANEIRO_160k.mp3"
+      caminho: " musicas/BANDA NOVO SOM - CE TEM MEU WHATSAPP LANÇAMENTO EXCLUSIVO 2021 LAMBADÃO JANEIRO_160k.mp3"
     },
     {
-       caminho: "/musicas/BANDA NOVO SOM - ELE É ELE EU SOU EU LANÇAMENTO EXCLUSIVO 2021 LAMBADÃO FEVEREIRO_160k.mp3" 
+       caminho: " musicas/BANDA NOVO SOM - ELE É ELE EU SOU EU LANÇAMENTO EXCLUSIVO 2021 LAMBADÃO FEVEREIRO_160k.mp3" 
     }, 
     { 
-        caminho: "/musicas/BANDA NOVO SOM - FACAS LANÇAMENTO EXCLUSIVO 2020 LAMBADÃO_160k.mp3"
+        caminho: " musicas/BANDA NOVO SOM - FACAS LANÇAMENTO EXCLUSIVO 2020 LAMBADÃO_160k.mp3"
     },
 ];
 
